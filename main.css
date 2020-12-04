@@ -1,0 +1,78 @@
+body {
+    background-color: rgb(235, 227, 211);
+    color: rgb(7, 7, 88);
+    font-family: sans-serif;
+}
+.languageButton {
+    background: linear-gradient(0.36turn,  rgba(204, 55, 44, 0.87), rgba(204, 55, 44, 0));
+    padding-left: 0.8cm;
+}
+#DE {
+    float: 1cm;
+}
+#EN {
+    float: 10cm;
+}
+#RU {
+    float: 15cm;
+}
+.Introduction {
+    background: linear-gradient(0.25turn, rgba(204, 55, 44, 0.87) , rgba(204, 55, 44, 0));
+    color: whitesmoke;
+    margin: 30px;
+    padding: 20px;
+}
+.Pigmente {
+    background: linear-gradient(0.25turn, rgba(253, 245, 240, 0.87) , rgba(204, 55, 44, 0));
+    color: rgb(7, 7, 88);
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-color:  rgb(207, 37, 7);
+    border-width: 2px;
+    padding-left: 0.2cm;
+    padding-bottom: 0.1cm;
+    padding-top: 0.1cm;
+}
+.firstBlock {
+    padding-left: 0.2cm;
+    text-align: justify;
+}
+.Grafik {
+    width: 600px;
+}
+.Cell {
+    margin: 10px;
+    color:rgb(207, 37, 7);
+}
+.secondCell {
+    padding: 50px;
+    padding-top: 30px;
+
+}
+.secondCell > .Farbe {
+    color: rgb(5, 5, 117);
+    padding: 0.01cm;
+}
+li:hover {
+    background-color: rgba(79, 89, 179, 0.719);
+    color: white;
+}
+.Button {
+    background-color: rgb(235, 227, 211);
+    margin: 0.3cm;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: tomato;
+}
+
+.ende {
+    text-align: center;
+    color: gray;
+}
+
+#res0 {
+    color: green;
+}
+#res1{
+    color: green;
+}

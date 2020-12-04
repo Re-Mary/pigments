@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pigments Database</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <div class=languageButton> 
+        <button id="DE">
+            <form action="D:\код\Pigments\indexDE.html">
+            <input type="submit" value="DE">
+            </form>  
+        </button><br>
+    </div>
+    <div class=languageButton> 
+        <button id="EN">
+            <form action="D:\код\Pigments\indexEN.html">
+            <input type="submit" value="EN">
+            </form>  
+        </button><br>
+    </div>
+    <div class=languageButton> 
+        <button id="RU">
+            <form action="file:///D:\код\Pigments\indexRU.html">
+            <input type="submit" value="RU">
+            </form>  
+        </button> 
+    </div>
+    
+ 
+    <div class=Introduction>
+        <h1>Introduction</h1>
+      <p>Navigation on the website</p>
+    </div>
+
+    <div class=firstBlock>
+        <h1 class="Pigmente">Pigments</h1><br>
+        <h2>History</h2>
+        <p>Unter Fassung versteht man, laut T. Brachert, eine Farbschicht oder Blattmetallauflage, welche auf einer Grundierung aufgetragen wurde.  Fassung auf dem Stein besitzt demnach einen auch für Holzskulpturen traditionellen Aufbau, welcher aus einer Vorbereitung des Untergrundes und darauffolgendem Farbauftrag besteht. Die Fassung kann nicht nur einen künstlerischen, sondern auch einen schützenden Charakter für das Objekt besitzen. <br>
+            In der Spätgotik wurde der Herstellungsprozess eines dreidimensionalen, gefassten Kunstwerkes zwischen Bildhauer und Fassmaler aufgeteilt. Allerdings war es auch keine Seltenheit, wenn der Bildhauer die Fassmalerarbeit übergenommen hat.  In der Regel wurden die kleineren Objekte in der Werkstatt fertig gestellt, also geschnitzt oder gehauen und gefasst, während die größeren Werke in situ fertiggestellt und gefasst wurden.  Da die ölgebundene Fassung beständige Eigenschaften im Außenbereich aufweist, wurde sie besonders häufig für Werke, die im Freien aufgestellt wurden, angewandt.
+            </p> <br>
+    </div>
+
+
+    <div>
+        <h2 class=firstBlock> Pigments in the time </h2>
+        <!-- Kartierung der Zeitspanne machen, unten ist ein Muster-->  
+        
+<div class=Grafik>
+    <canvas id="myChart"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script> 
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels: ['white', 'yellow', 'red', 'blue', 'green', 'brown', 'black'],
+        datasets: [{
+            label: 'Zeitleiste der Pigmenten',
+            backgroundColor: 'rgb(255,99,71)',
+            borderColor: 'rgb(0,0,128)',
+            data: [-1000, -1000, -1000, -500, 1000, -1000, -1000]
+        }]
+    },
+
+    // Configuration options go here
+    options: { }
+});
+</script> 
+ 
+</div>
+         <table class=Table>
+             <th class=Cell>Ancient</th>
+                <td class=secondCell><a class=Farbe href="file:///D:/%D0%BA%D0%BE%D0%B4/Diplom/white/whiteAntike.html" target="_blank"> <li>white</li> </a> 
+                    <a class=Farbe href="#" target="_blank"> <li>yellow</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>red</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>blue</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>brown</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>black</li> </a></td>
+             <th class=Cell>Medieval</th>
+                <td class=secondCell><a class=Farbe href=""> <li>white</li> </a> 
+                    <a class=Farbe href="#" target="_blank"> <li>yellow</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>red</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>blue</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>violett</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>brown</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>black</li> </a>
+                </td>
+             <th class=Cell>Modern</th>
+                <td class=secondCell> <a class=Farbe href=""> <li>white</li> </a> 
+                    <a class=Farbe href="#" target="_blank"> <li>yellow</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>red</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>blue</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>violett</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>brown</li> </a>
+                    <a class=Farbe href="#" target="_blank"> <li>black</li> </a>
+                </td>
+         </table>
+
+                
+    </div>
+    
+    <button class=Button>
+        <form  action="Conservation\main2.html" target="_blank">
+            <input class="Login" type="submit" value="More about Conservation >>">
+        </form>
+    </button>  
+
+    <div class=umfrage> 
+        <p>Is it interessting?</p>
+        <label for="ja">
+            <form action="#">
+                <input id='ja' value="ja" type="radio" name="umfrage"> yes
+                <input id='nein' value="nein" type="radio" name="umfrage"> no
+            </form>
+            </label><br>
+    
+    <div><label for="message">
+        <form action="./indexEN.html" placeholder="add something">
+            <input type="text" placeholder="write a message" required>
+            <button type="submit" value = "click" onclick = "alert('The message was sent. Thank You!')">sent</button>
+        </form>       
+        </label>          
+    </div><br>
+
+
+    
+ <h5 class=ende>copyright Maria © 2020</h5>   
+</body>
+</html>
