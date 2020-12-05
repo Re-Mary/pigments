@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONSERVATION</title>
+    <link rel="stylesheet" href="../../Pigments/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <!--This is heading -->
+    <h1>CONSERVATION OF ART</h1>
+    <style>
+        h1 {
+            font-family: 'Dosis', sans-serif 
+            }
+    </style>
+    <p> For me the main question in the conservation is about the painting layers.<br>
+        They are basically characterized and also distinguished in binding media and the support. </p>
+    <!--- TABLE-->
+    <table> 
+        <th>Painting Layer</th>
+        <tr>
+           <td>Binding Media
+            <ul>
+                <li>Tempera</li>
+                <li>Oil</li>
+                <li>Mixed Media</li>
+            </ul>
+           </td>
+           <td>Support
+               <ul>
+                <li>Textile</li>
+                <li>Wood</li>
+                <li>Stone</li>
+            </ul>
+           </td>     
+        </tr>
+    </table><br><br>
+    <!--My Job includes-->
+    <p> The conservation work includes:</p>
+    <ul>
+      <li>scientific investigation</li>
+      <li>documentation:</li>
+        <ul>
+            <li>cartogram</li>
+            <li>analysis</li>
+            <li>photos</li>
+            <li>concept for treatment and monitoring</li>
+        </ul>
+      <li>conservation and restoration treatments</li>
+      <li>recommendations for the future care</li>
+    </ul>
+<!-- Button back -->
+    <button>
+        <form action="../../Pigments/indexEN.html">
+            <input type="submit" value="<< back">
+        </form>  
+    </button>
+<br><br><br>
+
+
+<h2>Small help for conservators</h2>
+<h4>Hier you can calculate the concentration of your liquid (aqueous media like animal glue or synthetic adhesives): </h4>
+<!-- calculation of concentration. interface -->
+<div id="result">
+<label for="glue"> </label>
+    Glue (dry) <input type="number" placeholder="in gram" id="glueId"><br><br>
+    Water <input type="number" placeholder="in gram" id="waterId"> 
+    <button onclick="concentration()">get it!</button>
+<p id="res0"></p>    
+</div><br><br>
+
+<h4>If you need some concentration of liquid, do it hier:</h4>
+<!-- calculation of needed water and dry glue for concentration. interface -->
+<div id="needConcGlue">
+    <label for="needConc"></label>
+    Concentration you need <input type="number" placeholder="%" id="needConcId"><br><br>
+    Weight of liquid (water) you have <input type="number" placeholder="in gram" id="weightOfWaterId">
+    <button onclick="needConcGlueWater()">get it!</button>
+    <p id="res1"></p>
+</div> <br><br>
+
+<!-- IM PROGRESS: which color you should not mixed together -->
+<h4>Do you know which colors you should not mixed together? Try it below</h4>
+<p>For the retouching is it important to use the </p>
+<p>Oil colors</p>
+<div id="oilColors">
+    <label for="oilColors"></label>
+    First color <input type="text" placeholder="type in the first color hier" id="firstOilColorId"><br><br>
+    Second color <input type="text" placeholder="type in the second color hier" id="secondOilColorId">
+    <button onclick="mixedOilColors()">try it!</button>
+    <p id="res2"></p>
+</div>
+ 
+ 
+
+<script src="./glue.js"></script>  
+<script src="./oilcolors.js"></script>
+
+</body>
+</html>
