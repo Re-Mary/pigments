@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONSERVATION</title>
-    <link rel="stylesheet" href="D:\код\Pigments\main.css">
+    <link rel="stylesheet" href="./Pigments/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet"> 
 </head>
@@ -55,7 +55,7 @@
     </ul>
 
     <button>
-        <form action="D:\код\Pigments\indexEN.html">
+        <form action="./Pigments/indexEN.html">
             <input type="submit" value="<< back">
         </form>  
     </button>
@@ -71,25 +71,7 @@
     Water <input type="number" placeholder="in gram" id="waterId"> 
     <button onclick="concentration()">get it!</button>
 <p id="res0"></p>    
-</div>
-
-<!-- calculation of concentration -->
-<script>
-function concentration(){
-        if (document.getElementById("result")){
-            let massglue = parseInt(document.getElementById("glueId").value);
-            let massWater = parseInt(document.getElementById("waterId").value);
-            let V = massglue + massWater;
-            let conc = massglue/V*100;
-            conc=Math.round(conc);
-            console.log(V);
-            console.log(conc);
-            document.getElementById("res0").innerText= "Your concentration is: ~ " + conc + " %"
-        } else {
-           return alert("Something goes wrong ^(°.°)^")
-        }
-    }
-</script><br>
+</div><br><br>
 
 <h4>If you need some concentration of liquid, do it hier:</h4>
 <!-- calculation of needed water and dry glue for concentration. interface -->
@@ -100,26 +82,6 @@ function concentration(){
     <button onclick="needConcGlueWater()">get it!</button>
     <p id="res1"></p>
 </div> <br><br>
-<!-- calculation of needed water and dry glue -->
-<script>
-    function needConcGlueWater() {
-        if (document.getElementById("needConcGlue")) {
-            let concNeeded = document.getElementById("needConcId").value;
-            let weightOfWater = document.getElementById("weightOfWaterId").value;
-            typeof concNeeded === "number";
-            typeof weightOfWater ==="number";
-            let b = 100-concNeeded;
-            typeof b === "number";
-            let weightOgGlue = concNeeded*weightOfWater/b;
-            console.log(weightOgGlue);
-            weightOgGlue=Math.round(weightOgGlue);
-document.getElementById("res1").innerText= "You need to take " + weightOgGlue + " grams of dry glue"
-        } else {
-            alert("Something goes wrong  _/\(-.-)/\_");
-        }
-        
-    }
-</script>
 
 <!-- IM PROGRESS: which color you should not mixed together -->
 <h4>Do you know which colors you should not mixed together? Try it below</h4>
@@ -132,6 +94,45 @@ document.getElementById("res1").innerText= "You need to take " + weightOgGlue + 
     <button onclick="mixedOilColors()">try it!</button>
     <p id="res2"></p>
 </div>
+ 
+ 
+<!-- calculation of concentration -->
+<script>
+function concentration(){
+        if (document.getElementById("result")){
+            let massglue = parseInt(document.getElementById("glueId").value);
+            let massWater = parseInt(document.getElementById("waterId").value);
+            let V = massglue + massWater;
+            let conc = massglue/V*100;
+            conc=Math.round(conc);
+            console.log(V);
+            console.log(conc);
+            document.getElementById("res0").innerText= `Your concentration is: ~ ${conc} % `|
+        } else {
+           return alert("Something goes wrong ^(°.°)^")
+        }
+    }
+</script>  
+<!-- calculation of needed water and dry glue -->  
+<script>
+    function needConcGlueWater() {
+        if (document.getElementById("needConcGlue")) {
+            let concNeeded = document.getElementById("needConcId").value;
+            let weightOfWater = document.getElementById("weightOfWaterId").value;
+            typeof concNeeded === "number";
+            typeof weightOfWater ==="number";
+            let b = 100-concNeeded;
+            typeof b === "number";
+            let weightOgGlue = concNeeded*weightOfWater/b;
+            console.log(weightOgGlue);
+            weightOgGlue=Math.round(weightOgGlue);
+document.getElementById("res1").innerText= "You need to take ${weightOgGlue} grams of dry glue"
+        } else {
+            alert("Something goes wrong  _/\(-.-)/\_");
+        }
+        
+    }
+</script>  
 <!-- mixed oil colors -->
 <script>
     function mixedOilColors () {
@@ -147,9 +148,6 @@ document.getElementById("res1").innerText= "You need to take " + weightOgGlue + 
 
 
 
-
-<br><br>
-<h5 class=ende>copyright Maria © 2020</h5>  
 </body>
 </html>
 
