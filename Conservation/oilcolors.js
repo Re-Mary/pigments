@@ -97,12 +97,22 @@ function mixedOilColors (){
 
 } */
 
+let Oilcolor = { 
+    red: ["english red", "cadmium red" ],
+    green: "glauconite",
+    blue: "cobalt blue",
+    black: "It will be black"
+}
+console.log(Oilcolor.red);
+
 function mixedOilColors (){
     const firstOilColor = document.getElementById("firstOilColorId").value;
     const secondOilColor = document.getElementById("secondOilColorId").value;
     
-    if (firstOilColor==='cobalt blue' && secondOilColor==='lead white') {
+    if (firstOilColor==='cobalt blue' && secondOilColor==='lead white' ||
+        firstOilColor === 'lead white' && secondOilColor === "cobalt white" || ) {
         console.log('Will be black');
+        document.querySelector("#res2").textContent = Oilcolor.red[1];
     } else if (firstOilColor==='cobalt violet light' && secondOilColor==='lead white') {
         console.log('WIll be dark/black');
     } else if (firstOilColor==='cobalt violet dark' && secondOilColor==='lead white') {
@@ -111,12 +121,15 @@ function mixedOilColors (){
         console.log('You can use it!');
     } else {
         console.log ('Please, fill in the fields')
-        alert('Please, fill in the fields')
+ //       alert('Please, fill in the fields')
     }
 
 };
 
-document.getElementById("oilColors");
+
+
+
+
 
 
 
