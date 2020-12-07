@@ -76,3 +76,38 @@ li:hover {
 #res1{
     color: green;
 }
+#res2{
+    color: green;
+}
+
+
+.yellowcolor {
+    color: rgb(231, 209, 5);
+}
+.orangecolor {
+    color: rgb(240, 145, 3);
+}
+.redcolor {
+    color: rgb(226, 36, 36);
+}
+.purpurcolor {
+    color: rgb(177, 44, 88);
+}
+.violetcolor {
+    color: indigo;
+}
+.bluecolor {
+    color: rgb(20, 150, 201);
+}
+.darkbluecolor {
+    color: rgb(45, 45, 190);
+}
+.greencolor {
+    color: green;
+}
+.ochrecolor {
+    color: rgb(184, 143, 67);
+}
+.browncolor {
+    color: rgb(116, 74, 13);
+}
