@@ -83,18 +83,30 @@
     <p id="res1"></p>
 </div> <br><br>
 
-<!-- IM PROGRESS: which color you should not mixed together -->
+<!-- IM PROGRESS: which color you should not mixed together. Interface -->
 <h4>Do you know which colors you should not mixed together? Try it below</h4>
 <p>For the retouching is it important to use the </p>
 <p>Oil colors</p>
 <div id="oilColors">
     <label for="oilColors"></label>
-    First color <input type="text" placeholder="type in the first color hier" id="firstOilColorId"><br><br>
-    Second color <input type="text" placeholder="type in the second color hier" id="secondOilColorId">
+<!--    First color <input type="text" placeholder="type in the first color hier" id="firstOilColorId"><br><br> --> 
+    <label for="firstOilColorId">First color</label> <select name="" id="firstOilColorId">
+        <option value="lead white">lead white</option>
+        <option value="zinc white">zinc white</option>
+        <option value="strontium yellow">strontium yellow</option>
+        <option value="cadmium lemon">cadmium lemon</option>
+        <option value="cadmium yellow">cadmium yellow</option>
+        <option value="cobalt blue">cobalt blue</option>
+        <option value=""></option>
+    </select>
+<!--     Second color <input type="text" placeholder="type in the second color hier" id="secondOilColorId"> -->
+    <label for="secondOilColorId">First color</label> <select name="" id="secondOilColorId">
+    <option value="lead white">lead white</option>
+    </select>
     <button onclick="mixedOilColors()">try it!</button>
-    <p id="res2"></p>
+    <p id="res2">Your colors</p>
 </div>
- 
+
  
 
 <script src="./glue.js"></script>  
