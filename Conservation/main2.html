@@ -109,7 +109,7 @@ function concentration(){
             console.log(conc);
             document.getElementById("res0").innerText= `Your concentration is: ~ ${conc} % `
         } else {
-           return alert("Something goes wrong ^(°.°)^")
+           return alert("Something goes wrong")
         }
     }
 </script>  
@@ -117,18 +117,16 @@ function concentration(){
 <script>
     function needConcGlueWater() {
         if (document.getElementById("needConcGlue")) {
-            let concNeeded = document.getElementById("needConcId").value;
-            let weightOfWater = document.getElementById("weightOfWaterId").value;
-            typeof concNeeded === "number";
-            typeof weightOfWater ==="number";
-            let b = 100-concNeeded;
-            typeof b === "number";
+            let concNeeded = +document.getElementById("needConcId").value;
+            let weightOfWater = +document.getElementById("weightOfWaterId").value;
+            let b = +(100-concNeeded);
+//            typeof b === "number";
             let weightOgGlue = concNeeded*weightOfWater/b;
             console.log(weightOgGlue);
             weightOgGlue=Math.round(weightOgGlue);
-document.getElementById("res1").innerText= "You need to take ${weightOgGlue} grams of dry glue"
+document.getElementById("res1").innerText= `You need to take ${weightOgGlue} grams of dry glue`
         } else {
-            alert("Something goes wrong  _/\(-.-)/\_");
+            alert("Something goes wrong");
         }
         
     }
